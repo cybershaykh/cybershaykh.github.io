@@ -1,11 +1,11 @@
 ---
 title: "Introduction To API Hacking"
-author:
+author: Mahmud Muhammad
   name: cybershaykh
   link: https://twitter.com/cybershaykh
 date: 2024-05-01
 description: "Talking about social engineering"
-tags: [API HACKING]
+tags: [API HACKING] 
 ---
  
  ![api hacking](assets/img/api_hacking.jpg)
@@ -24,7 +24,7 @@ We also have :
 1. Public API’s — API’s that can be used and accesssed by anyone
 2. Partner API’s — Some companies share API’s with each other in order to share data and resources, they are known as Partner API’s
 3. Private API’s — These are API’s that are to be used within an organization.
-API’s generally have the [structure](https://api.example.com/v1/users)
+API’s generally have the structure : ``` https://api.example.com/v1/users ```
 
 The /v1 means version 1, API’s can have different versions depending on thier usage. The /users part of the API is known as an endpoint. An API endpoint is a specific url which has a resource or data that can be accesseed simply by browsing to that url. The /users endpoint would typically return the users of that particular application. To learn more about API’s , visit this [link](https://www.ibm.com/topics/api)
 
@@ -51,34 +51,42 @@ API security testing or hacking is a way of testing and ensuring that the API’
 
 - Weak or Poor authentication
 - Weak password
+  
 3. Broken Object Propery Level Authorization
 
 - Exploting endpoints by reading and/or modifying values of objects
 - Revealing unneccessary sensitive data
+  
 4. Unrestricted Resource Consumption
 
 - Abusing API calls due to high volumes of API calls, large requests
 - Missing inadequate rate controls
+  
 5. Broken Function Level Authorization — BFLA
 
 - Abuse of API endpoints to improperly modify objects
 - Modify account roles
+  
 6. Unrestricted access to sensitive business flows
 
 - Abuse of a legitimate business workflows through excessive , automated use
 - Rate limiting , CAPTCHAs not always effective against fraudulent traffic
+  
 7. Server Side Request Forery
 
 - Exploiting URL inputs to make a request to a malicious 3rd party server
 - Can lead to data leaks
+  
 8. Security Misconfigurations
 
 - Risks that can arise from misconfigurations
 - Unneccesary features enabled
+  
 9. Improper Inventory Management
 
 - Unauthorised APIs access via old unused APAPI versions
 - Forgotten APIs
+  
 10. Unsafe Consumption of APIs
 
 - Exposures and Exploitation through 3rd party APIs
