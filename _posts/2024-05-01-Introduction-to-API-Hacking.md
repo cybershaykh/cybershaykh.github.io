@@ -1,6 +1,6 @@
 ---
 title: "Introduction To API Hacking"
-author: Mahmud Muhammad
+author: 
   name: cybershaykh
   link: https://twitter.com/cybershaykh
 date: 2024-05-01
