@@ -46,49 +46,31 @@ API security testing or hacking is a way of testing and ensuring that the API’
 1. Broken Object Level Authorization — BOLA
 - Occurs when a user can see the information of other users
 - Manipulating API objects to view items belonging to other users
-
 2. Broken Authentication
-
 - Weak or Poor authentication
 - Weak password
-  
 3. Broken Object Propery Level Authorization
-
 - Exploting endpoints by reading and/or modifying values of objects
 - Revealing unneccessary sensitive data
-  
 4. Unrestricted Resource Consumption
-
 - Abusing API calls due to high volumes of API calls, large requests
 - Missing inadequate rate controls
-  
 5. Broken Function Level Authorization — BFLA
-
 - Abuse of API endpoints to improperly modify objects
 - Modify account roles
-  
 6. Unrestricted access to sensitive business flows
-
 - Abuse of a legitimate business workflows through excessive , automated use
 - Rate limiting , CAPTCHAs not always effective against fraudulent traffic
-  
 7. Server Side Request Forery
-
 - Exploiting URL inputs to make a request to a malicious 3rd party server
 - Can lead to data leaks
-  
 8. Security Misconfigurations
-
 - Risks that can arise from misconfigurations
 - Unneccesary features enabled
-  
 9. Improper Inventory Management
-
 - Unauthorised APIs access via old unused APAPI versions
 - Forgotten APIs
-  
 10. Unsafe Consumption of APIs
-
 - Exposures and Exploitation through 3rd party APIs
 
 ### How to better Secure your API’s
