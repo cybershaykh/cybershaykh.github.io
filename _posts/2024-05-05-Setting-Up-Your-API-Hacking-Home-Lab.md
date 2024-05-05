@@ -1,6 +1,6 @@
 ---
 title: "Setting Up Your API Hacking Home Lab"
-author: Mahmud Muhammad
+author:
   name: cybershaykh
   link: https://twitter.com/cybershaykh
 date: 2024-05-05
