@@ -27,13 +27,13 @@ This method works by using the [files by google](https://play.google.com/store/s
 
 ![img 1](assets/img/img1.jpg)
 
-5. Navigate to the Apps category where you'd see your installed applications. 
+4. Navigate to the Apps category where you'd see your installed applications. 
 
-![img 1](assets/img/img2.jpg)
+![img 2](assets/img/img2.jpg)
 
-6. To get the apk of a desired Application, simply click on the three dots beside the app then click on 'share' .
+5. To get the apk of a desired Application, simply click on the three dots beside the app then click on 'share' .
 
-![img 1](assets/img/img3.jpg)
+![img 3](assets/img/img3.jpg)
 
 That's all! You can now get the apk file of any app you want without any hassle and test away!
 Most security researchers would give up and move on leaving all the attack surface and potential bugs to other researchers. Doing this gave me an edge on the program I'm currently on as I might have stumbled upon a critical issue simply by reading the source files of the application. Hopefully I'd be able to write about it if it's accepted. 
