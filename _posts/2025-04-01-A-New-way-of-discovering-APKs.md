@@ -1,6 +1,6 @@
 ---
 title: "A new way of discovering APKs"
-author:  cybershaykh
+author: 
   name: cybershaykh
   link: https://twitter.com/cybershaykh
 date: 2025-04-01
