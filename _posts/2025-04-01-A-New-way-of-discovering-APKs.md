@@ -8,9 +8,6 @@ description: "Mobile Security"
 tags: [Mobile Security] 
 ---
 
-
-# A New way of Discovering APKs
-
 ![APKs](assets/img/apk.jpg)
 
 Have you ever wanted to conduct a test (static analysis) on a mobile application but can't seem to find the apk file online? Well , this happened to me today. I hopped on a new web3 program and wanted to check out their mobile application because it was in scope. I normally decompile the apk files of applications using https://decompiler.com then go through the files and code, I don't really perform dynamic analysis by proxying requests to burp yet  (Send me RAM (: )
