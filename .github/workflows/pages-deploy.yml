@@ -39,11 +39,11 @@ jobs:
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./ # Adjust if your Jekyll source is in a subdirectory
-          destination: ./_site # Default, adjust if needed
+          destination: ./_posts # Default, adjust if needed
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_site # Path to your built Jekyll site
+          path: ./_posts # Path to your built Jekyll site
 
   # Deployment job
   deploy:
