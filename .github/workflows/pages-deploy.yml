@@ -1,51 +1,56 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll with GitHub Pages dependencies
+name: Deploy Jekyll with Custom Dependencies
 
 on:
-  # Runs on pushes to the default branch
   push:
     branches: ["main"] # Change "main" to your default branch name if different
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.4.4' # Or a specific version like '3.2'
-          bundler-cache: true # runs bundle install and caches gems
-          cache-version: 1 # Increment this number if you change your Gemfile or Gemfile.lock
+          ruby-version: '3.4' # Or '3.3' or a specific patch version like '3.4.0'
+          bundler-cache: true # This will run bundle install based on your Gemfile.lock
+          cache-version: 1
+
+      # --- REMOVE THIS STEP:
+      # - name: Build with Jekyll
+      #   uses: actions/jekyll-build-pages@v1
+      #   with:
+      #     source: ./
+      #     destination: ./_site
+
+      # --- ADD THIS STEP INSTEAD:
+      - name: Build Jekyll site
+        run: |
+          bundle exec jekyll build --source ./ --destination ./_posts
+        env:
+          JEKYLL_ENV: production # Optional: Set Jekyll environment if needed
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./ # Adjust if your Jekyll source is in a subdirectory
-          destination: ./_posts # Default, adjust if needed
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_posts # Path to your built Jekyll site
+          path: ./_posts
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages
