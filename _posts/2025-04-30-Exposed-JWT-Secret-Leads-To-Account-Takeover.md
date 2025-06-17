@@ -1,6 +1,6 @@
 ---
 title: "Exposed secret in JWT token leads to account takeover"
-author: 
+author: cybershaykh
   name: cybershaykh
   link: https://twitter.com/cybershaykh
 date: 2024-05-01
