@@ -14,17 +14,9 @@ GEM
     ethon (0.16.0)
       ffi (>= 1.15.0)
     eventmachine (1.2.7)
-    ffi (1.17.2)
     ffi (1.17.2-x64-mingw-ucrt)
-    ffi (1.17.2-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
-    google-protobuf (4.31.1)
-      bigdecimal
-      rake (>= 13)
     google-protobuf (4.31.1-x64-mingw-ucrt)
-      bigdecimal
-      rake (>= 13)
-    google-protobuf (4.31.1-x86_64-linux-gnu)
       bigdecimal
       rake (>= 13)
     html-proofer (4.4.3)
@@ -91,13 +83,7 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    mini_portile2 (2.8.9)
-    nokogiri (1.18.8)
-      mini_portile2 (~> 2.8.2)
-      racc (~> 1.4)
     nokogiri (1.18.8-x64-mingw-ucrt)
-      racc (~> 1.4)
-    nokogiri (1.18.8-x86_64-linux-gnu)
       racc (~> 1.4)
     parallel (1.27.0)
     pathutil (0.16.2)
@@ -112,12 +98,7 @@ GEM
     rexml (3.4.1)
     rouge (4.5.2)
     safe_yaml (1.0.5)
-    sass-embedded (1.89.2)
-      google-protobuf (~> 4.31)
-      rake (>= 13)
     sass-embedded (1.89.2-x64-mingw-ucrt)
-      google-protobuf (~> 4.31)
-    sass-embedded (1.89.2-x86_64-linux-gnu)
       google-protobuf (~> 4.31)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
@@ -134,10 +115,7 @@ GEM
     zeitwerk (2.7.3)
 
 PLATFORMS
-  ruby
   x64-mingw-ucrt
-  x86_64-linux
-  —add-unknown
 
 DEPENDENCIES
   html-proofer (~> 4.4)

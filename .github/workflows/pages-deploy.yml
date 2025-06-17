@@ -29,16 +29,10 @@ jobs:
           bundler-cache: true # This will run bundle install based on your Gemfile.lock
           cache-version: 1
 
-      # --- REMOVE THIS STEP:
-      # - name: Build with Jekyll
-      #   uses: actions/jekyll-build-pages@v1
-      #   with:
-      #     source: ./
-      #     destination: ./_site
 
-      # --- ADD THIS STEP INSTEAD:
       - name: Build Jekyll site
-        run:  bundle exec jekyll build --source ./ --destination ./_posts
+        run:  |
+            bundle exec jekyll build --source ./ --destination ./_posts
         env:  JEKYLL_ENV: production # Optional: Set Jekyll environment if needed
 
       - name: Setup Pages
