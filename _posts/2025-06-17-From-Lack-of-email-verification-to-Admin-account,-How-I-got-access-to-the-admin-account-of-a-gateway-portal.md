@@ -1,5 +1,4 @@
 ---
-title: "From Lack of email verification to Admin account, How I got access to the admin account of a gateway portal"
 author: cybershaykh
   name: cybershaykh
   link: https://twitter.com/cybershaykh
@@ -7,6 +6,8 @@ date: 2025-06-17
 description: "Security Research"
 tags: [Application Security]
 ---
+
+# From Lack of email verification to Admin account, How I got access to the admin account of a gateway portal
 
 Recently, I was getting rusty and bored, then I  started looking for companies who had responsible disclosure programs to hack on and then I discovered this leading company that deals with HR tools and workforce management , a really huge company with lots of assets online, and from their acknowledgements page, I noticed it had not been visited by many security researchers making the chance of finding security issues quite high. 
 
